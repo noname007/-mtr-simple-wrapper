@@ -2,13 +2,41 @@
 #include<stdlib.h>
 
 #define CMD_MAX_BUFF 1024
+enum LOG_LEVEL
+{
+    LOG_NO = 0,
+    LOG_TRACE,
+    LOG_INFO,
+    LOG_DEBUG,
+// 
+    LOG_ALL,
+};
 
-int main(){
-    char * domain[] = {
-        "gs.push.rgbvr.com",
-        "dl.push.rgbvr.com",
-    };
+#ifndef DEBUG_LEVEL
+#define DEBUG_LEVEL LOG_NO
+#endif
 
+// #define P_LOG_LEVEL(Level) (DEBUG_LEVEL < Level)
+
+int main(int argc,char * argv[]){
+    // char * domain[] = {
+    //     "gs.push.rgbvr.com",
+    //     "dl.push.rgbvr.com",
+    // };
+
+    // printf("%d\n", DEBUG_LEVEL);
+    // printf("%d\n", LOG_DEBUG);
+
+// #if P_LOG_LEVEL(LOG_ALL)
+//     printf("%d\n",argc);
+//     for(int i = 0;i<argc;++i){
+//         printf("%s ", argv[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// #endif
+
+    char ** domain = &argv[1];
     // freopen("out.txt","w",stdout);
     char buff[CMD_MAX_BUFF];
 //   system("pwd");
