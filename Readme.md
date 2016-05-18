@@ -5,7 +5,7 @@
 <!-- ~~./a.exe gs.push.rgbvr.com 220.194.213.122~~ -->
 
 - 下载软件包 https://github.com/noname007/mtr-simple-wrapper/releases 
-双击 1.bat 然后再命令行里面输入 mtr-cp.exe www.baidu.com
+- 双击 1.bat 然后再命令行里面输入 `mtr-cp.exe www.baidu.com`
 
 - 输出结果格式：
 `域名 最大丢包率`
