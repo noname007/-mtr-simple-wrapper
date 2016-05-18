@@ -5,7 +5,8 @@ BEGIN{
     temp = 0;
 }
 
-NR!=1 &&NR != 2{
+#NR!=1 &&NR != 2
+{
 #    print $2,$3 > "test.log";
     temp  += $3;
     if(max < temp){
