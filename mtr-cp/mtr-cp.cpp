@@ -45,6 +45,7 @@ int main(int argc, char* argv[])
 		printf("%s\n",buff);
 #endif
 		printf("%s ",domain[i]);
+		fflush(stdout);
 		system(buff);
 	}
 
