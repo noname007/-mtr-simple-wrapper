@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
 #ifdef DEBUG
 		printf("%s\n",buff);
 #endif
-
+		printf("%s ",domain[i]);
 		system(buff);
 	}
 
